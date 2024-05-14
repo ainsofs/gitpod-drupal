@@ -3,8 +3,8 @@ Start up the sandbox instance for Drupal on [gitpod.io](https://gitpod.io/).
 
 |Drupal version|Quick start link|
 |-|-|
-|Drupal 10.2.x|[![Drupal 10.2.x](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#DRUPAL_CORE_VERSION=10.2.x/https://github.com/ainsofs/gitpod-drupal)|
-|Drupal 9.5.x|[![Drupal 9.5.x](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#DRUPAL_CORE_VERSION=9.5.x/https://github.com/ainsofs/gitpod-drupal)|
+|Drupal 10.2.x|[![Drupal 10.2.x](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#DRUPAL_CORE_VERSION=10.2.x/https://github.com/ainsofs/gitpod-drupal/tree/ainsofs)|
+|Drupal 9.5.x|[![Drupal 9.5.x](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#DRUPAL_CORE_VERSION=9.5.x/https://github.com/ainsofs/gitpod-drupal/tree/ainsofs)|
 
 ## How to installation
 
