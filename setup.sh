@@ -9,8 +9,8 @@ cd drupal
 # Add essential contirbute modules
 composer -n require drush/drush
 composer -n require drupal/admin_toolbar
-composer -n require drupal/gin
-composer -n require drupal/project_browser
+composer -n require 'drupal/gin:^3.0@RC'
+composer -n require 'drupal/project_browser:^1.0@beta'
 
 # Add developer modules
 composer -n require drupal/twig_debugger --dev
@@ -30,3 +30,12 @@ vendor/bin/drush -y site:install \
   --account-name="admin" \
   --account-pass="$(openssl rand -base64 16)" \
   --db-url=sqlite://sites/default/files/.ht.sqlite
+
+# Enable themes and modules
+vendor/bin/drush -y theme:enable gin
+vendor/bin/drush -y config:set system.theme admin gin
+vendor/bin/drush -y en admin_toolbar project_browser
+
+# Install aliases
+curl -L https://gist.github.com/ainsofs/ba947741b230606be5d2f4aad6faf7bf/raw -o .bash_aliases
+source .bash_aliases
