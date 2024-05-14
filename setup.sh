@@ -8,12 +8,15 @@ cd drupal
 
 # Add essential contirbute modules
 composer -n require drush/drush
-composer -n require drupal/devel
-composer -n require drupal/twig_debugger
 composer -n require drupal/admin_toolbar
-composer -n require drupal/coder
-composer -n require drupal/webprofiler
 composer -n require drupal/gin
+composer -n require drupal/project_browser
+
+# Add developer modules
+composer -n require drupal/twig_debugger --dev
+composer -n require drupal/devel --dev
+composer -n require drupal/coder --dev
+composer -n require drupal/webprofiler --dev
 composer -n install
 
 # Setup the phpcs standard
