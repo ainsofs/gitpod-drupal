@@ -13,6 +13,7 @@ composer -n require drupal/twig_debugger
 composer -n require drupal/admin_toolbar
 composer -n require drupal/coder
 composer -n require drupal/webprofiler
+composer -n require drupal/gin
 composer -n install
 
 # Setup the phpcs standard
