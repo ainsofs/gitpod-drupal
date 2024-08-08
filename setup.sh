@@ -4,7 +4,7 @@ set -e
 # Create new drupal core code tree
 mkdir drupal
 # composer -n create-project drupal/recommended-project:${DRUPAL_CORE_VERSION} drupal
-composer -n create-project --repository-url=https://github.com/ainsofs/drupal-project/tree/10.3-ainsofs drupal
+composer -n create-project --repository-url=https://github.com/ainsofs/drupal-project/tree/10.3-ainsofs:${DRUPAL_CORE_VERSION} drupal
 cd drupal
 
 # Add essential contirbute modules
@@ -32,7 +32,6 @@ vendor/bin/drush -y site:install \
   --db-url=sqlite://sites/default/files/.ht.sqlite
 
 # Install recipe
-cd drupal/
 php web/scripts/drupal recipes recipes/contrib/drupal-base
 
 # Enable themes and modules
